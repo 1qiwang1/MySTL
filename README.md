@@ -1,5 +1,3 @@
-# -STL-
-
 #Vector
 
 #List
