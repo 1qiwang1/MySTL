@@ -9,4 +9,12 @@ add_executable(MySTL main.cpp
         HashTable.h
         MyDeque.h
         RedBlackTree.h
-        MySet.h)
+        MySet.h
+        Unordered_set.h
+        Multiset.h
+        Map.h
+        Unordered_map.h
+        Multimap.h
+        Stack.h
+        Queue.h
+        Priority_queue.h)

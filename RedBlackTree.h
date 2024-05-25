@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-using namespace std;
+
 
 enum class Color { RED, BLACK };
 
@@ -541,7 +541,7 @@ public:
         return size == 0;
     }
 
-    Value *at(const Key &key) {
+    Value* at(const Key &key) {
         auto ans = lookUp(key);
         if (ans != nullptr) {
             return &ans->value;

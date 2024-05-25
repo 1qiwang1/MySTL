@@ -3,7 +3,7 @@
 #include<functional>
 #include <list>
 #include <vector>
-using namespace std;
+
 
 template<typename Key, typename Value, typename Hash = hash<Key>>
 class HashTable {
@@ -99,6 +99,9 @@ public:
             numElements++;
         }
     }
+
+    void insertKey(const Key& key) {insert(key, Value{}); }
+
     // 从哈希表中移除键
     void erase(const Key& key) {
         // 计算键的索引
@@ -142,5 +145,12 @@ public:
             }
         }
         cout << endl;
+    }
+
+    // 清空哈希表
+    void clear() {
+        this->buckets.clear();
+        this->numElements = 0;
+        this->tableSize = 0;
     }
 };
